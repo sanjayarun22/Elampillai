@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elampillai - The Saree Weaving Hub of Salem, India</title>
+    <style>
+        /* General Reset and Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #fff;
+            line-height: 1.6;
+            padding: 0 20px;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #008080;
+            color: #fff;
+            text-align: center;
+            padding: 40px 20px;
+            margin-bottom: 20px;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.2em;
+            font-weight: 300;
+        }
+
+        /* Main Content Styling */
+        main {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        h2 {
+            color: #008080;
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 1.2em;
+            font-size: 1em;
+            color: #555;
+        }
+
+        /* Pincode Search Styling */
+        #pincode-section {
+            margin: 20px 0;
+        }
+        #pincode-search {
+            padding: 10px;
+            font-size: 1em;
+            width: 200px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        #search-button {
+            padding: 10px 20px;
+            background-color: #008080;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        #search-button:hover {
+            background-color: #006666;
+        }
+        #pincode-result {
+            margin-top: 15px;
+            font-size: 1.1em;
+            color: #333;
+        }
+
+        /* Footer Section */
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-size: 0.9em;
+            border-top: 1px solid #ddd;
+            margin-top: 20px;
+        }
+        footer a {
+            color: #008080;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Elampillai</h1>
+    <p>The Saree Weaving Hub of Salem, India</p>
+</header>
+
+<main>
+    <h2>About Elampillai</h2>
+    <p>Elampillai, a vibrant town in the Salem district of Tamil Nadu, is renowned for its traditional saree weaving industry. Known for the intricate designs and vibrant colors, sarees from Elampillai hold a special place in the hearts of saree lovers across India.</p>
+
+    <h2>The Saree Weaving Heritage</h2>
+    <p>Generations of artisans in Elampillai have dedicated themselves to preserving the art of saree weaving. This craft has not only become a livelihood but a symbol of pride for the community. Every saree tells a story of craftsmanship, patience, and cultural heritage.</p>
+
+    <h2>Visit Elampillai</h2>
+    <p>If you're looking to experience the world of handwoven sarees, Elampillai is a must-visit destination. From exploring the local markets to meeting the artisans, you’ll get a glimpse of the dedication and skill behind each saree.</p>
+
+    <!-- Pincode Search Section -->
+    <div id="pincode-section">
+        <h2>Search for Pincode</h2>
+        <input type="text" id="pincode-search" placeholder="Enter Pincode...">
+        <button id="search-button" onclick="showPincode()">Search</button>
+        <div id="pincode-result"></div>
+    </div>
+
+    <a href="#contact" class="button">Contact Us</a>
+</main>
+
+<footer id="contact">
+    <p>For more information, reach out to us at <a href="mailto:info@elampillaisarees.com">info@elampillaisarees.com</a></p>
+    <p>&copy; 2024 Elampillai, Salem, India</p>
+</footer>
+
+<script>
+    // JavaScript function to show pincode information
+    function showPincode() {
+        const pincodeInput = document.getElementById('pincode-search').value;
+        const pincodeResult = document.getElementById('pincode-result');
+
+        // Sample pincode data for Elampillai
+        const elampillaiPincode = "637502";
+
+        if (pincodeInput === elampillaiPincode) {
+            pincodeResult.innerHTML = `The pincode for Elampillai, Salem is <strong>${elampillaiPincode}</strong>.`;
+        } else {
+            pincodeResult.innerHTML = "Pincode not found. Please try again.";
+        }
+    }
+</script>
+
+</body>
+</html>
